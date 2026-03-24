@@ -1,259 +1,162 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>WT_M</title>
+    <title>WT_M</title>
 </head>
- 
+
 <body>
-<h1> University Admission Form </h1>
- 
- 
-<form>
-<table>
- 
-<tr>
- 
-<td>Student's Name </td>
-<td><input type="text" ></td>
-</tr>
- 
-<tr>
-<td> Father's Name</td>
-<td><input type="text"></td>
-</tr>
+    <h1> University Admission Form </h1>
 
-<tr>
-<td> Mother's Name</td>
-<td><input type="text"></td>
-</tr>
- 
-<tr>
-<td>
-Birth Date
-</td>
-<td><input type="date"></td>
-<td> Gender:</td>
-<td>
-<input type="radio" name="gender" value="Male"> Male
-<input type="radio" name="gender" value="female"> Female
-<input type="radio" name="gender" value="other"> Others
-</td>
-</tr>
 
-<tr>
-<td><h3>Present Address:</h3></td>
-</tr>
+    <form>
+        <table>
 
-<tr>
-<td>Division:</td>
-<td>District:</td>
-</tr>
+            <tr>
 
-<tr>
-<td>Address:</td>
-</tr>
+                <td>Student's Name </td>
+                <td><input type="text"></td>
+            </tr>
 
-<tr>
-<td><h3>Permanent Address:</h3></td>
-</tr>
+            <tr>
+                <td> Father's Name</td>
+                <td><input type="text"></td>
+            </tr>
 
-<tr>
-<td>Division:</td>
-<td>District:</td>
-</tr>
+            <tr>
+                <td> Mother's Name</td>
+                <td><input type="text"></td>
+            </tr>
 
-<tr>
-<td>Address:</td>
-</tr>
+            <tr>
+                <td>
+                    Birth Date
+                </td>
+                <td><input type="date"></td>
+            </tr>
 
-<tr>
-<td><h3>Other's information:</h3></td>
-</tr>
+            <tr>
+                <td>Gender:</td>
 
-<tr>
-    <td>Religion:</td>
-    <td>
-        <select name="religion">
-            <option value=""></option>
-            <option value="Islam">Islam</option>
-            <option value="Hinduism">Hinduism</option>
-            <option value="Christianity">Christianity</option>
-            <option value="Buddhism">Buddhism</option>
-            <option value="Other">Other</option>
-        </select>
-    </td>
- 
-    <td>Nationality:</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
 
-    <td>
-        <select name="nationality">
-            <option value=""></option>
-            <option value="Bangladeshi">Bangladeshi</option>
-            <option value="Indian">Indian</option>
-            <option value="American">American</option>
-            <option value="British">British</option>
-            <option value="Other">Other</option>
-        </select>
-    </td>
-</tr>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
 
-<tr>
-<td>Phone Number:</td>
-<td><input type="tel"></td>
-<td>Email</td>
-    <td>
-<input type="email"></td>
-</tr>
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Others</label>
+                </td>
+            </tr>
 
-<tr>
-<td><h3>Status:</h3></td>
-</tr>
+            <tr>
+                <td>
+                    <h3>Present Address:</h3>
+                </td>
+            </tr>
 
-<tr>
-<td>
-<input type="radio" name="status" value="Single"> Single
-<input type="radio" name="status" value="Married"> Married
-</td>
-</tr>
+            <tr>
+                <td>Division:</td>
+                <td>District:</td>
+            </tr>
 
-<tr>
-<td><h4>Course Name:</h4></td>
-<td><input type="text"></td>
-</tr>
- 
-<tr>
-    <td>
-<input type="submit">
-    </td>
-</tr>
+            <tr>
+                <td>Address:</td>
+            </tr>
 
- <a href="https://aiub.edu">AIUB</a>
- 
-<p> </p>
- 
-</table>
-</form>
+            <tr>
+                <td>
+                    <h3>Permanent Address:</h3>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Division:</td>
+                <td>District:</td>
+            </tr>
+
+            <tr>
+                <td>Address:</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h3>Other's information:</h3>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Religion:</td>
+                <td>
+                    <select name="religion">
+                        <option value=""></option>
+                        <option value="Islam">Islam</option>
+                        <option value="Hinduism">Hinduism</option>
+                        <option value="Christianity">Christianity</option>
+                        <option value="Buddhism">Buddhism</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+
+                <td>Nationality:</td>
+
+                <td>
+                    <select name="nationality">
+                        <option value=""></option>
+                        <option value="Bangladeshi">Bangladeshi</option>
+                        <option value="Indian">Indian</option>
+                        <option value="American">American</option>
+                        <option value="British">British</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Phone Number:</td>
+                <td><input type="tel"></td>
+                <td>Email</td>
+                <td>
+                    <input type="email">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h3>Status:</h3>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="radio" id="single" name="status" value="Single">
+                    <label for="single">Single</label>
+
+                    <input type="radio" id="married" name="status" value="Married">
+                    <label for="married">Married</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h4>Course Name:</h4>
+                </td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="submit">
+                </td>
+            </tr>
+
+            <a href="https://aiub.edu">AIUB</a>
+
+            <p> </p>
+
+        </table>
+    </form>
 </body>
- 
+
 </html>
-=======
-<!DOCTYPE html>
-<html>
-<head>
-<title>WT_M</title>
-</head>
- 
-<body>
-<h1> University Admission Form </h1>
- 
- 
-<form>
-<table>
- 
-<tr>
- 
-<td>Student's Name </td>
-<td><input type="text" ></td>
-</tr>
- 
-<tr>
-<td> Father's Name</td>
-<td><input type="text"></td>
-</tr>
-
-<tr>
-<td> Mother's Name</td>
-<td><input type="text"></td>
-</tr>
- 
-<tr>
-<td>
-Birth Date
-</td>
-<td><input type="date"></td>
-<td> Gender:</td>
-<td>
-<input type="radio" name="gender" value="Male"> Male
-<input type="radio" name="gender" value="female"> Female
-<input type="radio" name="gender" value="other"> Others
-</td>
-</tr>
-
-<tr>
-<td><h3>Present Address:</h3></td>
-</tr>
-
-<tr>
-<td>Division:</td>
-<td>District:</td>
-</tr>
-
-<tr>
-<td>Address:</td>
-</tr>
-
-<tr>
-<td><h3>Permanent Address:</h3></td>
-</tr>
-
-<tr>
-<td>Division:</td>
-<td>District:</td>
-</tr>
-
-<tr>
-<td>Address:</td>
-</tr>
-
-<tr>
-    <td>Religion:</td>
-    <td>
-        <select name="religion">
-            <option value=""></option>
-            <option value="Islam">Islam</option>
-            <option value="Hinduism">Hinduism</option>
-            <option value="Christianity">Christianity</option>
-            <option value="Buddhism">Buddhism</option>
-            <option value="Other">Other</option>
-        </select>
-    </td>
- 
-    <td>Nationality:</td>
-
-    <td>
-        <select name="nationality">
-            <option value=""></option>
-            <option value="Bangladeshi">Bangladeshi</option>
-            <option value="Indian">Indian</option>
-            <option value="American">American</option>
-            <option value="British">British</option>
-            <option value="Other">Other</option>
-        </select>
-    </td>
-</tr>
-
-<tr>
-<td>Phone Number:</td>
-<td><input type="tel"></td>
-<td>Email</td>
-    <td>
-<input type="email"></td>
-</tr>
- 
-<tr>
-    <td>
-<input type="submit">
-    </td>
-</tr>
- 
- 
-<p> </p>
- 
-</table>
-</form>
-</body>
- 
-</html>
->>>>>>> ff1594d126791009c50eaac4de7b319ad15041d9
- 
