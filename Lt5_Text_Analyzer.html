@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Text Analyzer</title>
+</head>
+
+<body>
+
+    <h2>Text Analyzer</h2>
+
+    <textarea id="text" rows="8" cols="50" placeholder="Write or paste text here"></textarea>
+    <br><br>
+    <button onclick="analyze()">Analyze Text</button>
+
+    <div id="output">
+        <p>Characters: <span id="chars">0</span></p>
+        <p>Words: <span id="words">0</span></p>
+        <p>Reversed:</p>
+        <p id="rev"></p>
+    </div>
+
+    <script>
+        function analyze() {
+            var text = document.getElementById("text").value;
+
+
+            var trimmed = text.trim();
+
+            if (trimmed === "") 
+            {
+                document.getElementById("chars").innerHTML = 0;
+                document.getElementById("words").innerHTML = 0;
+                document.getElementById("rev").innerHTML = "";
+                return;
+            }
+
+            var c = text.length;
+
+            var words = trimmed.split(" ");
+            var countWords = 0;
+            var i;
+            for (i = 0; i < words.length; i++) 
+            {
+                if (words[i] !== "") {
+                    countWords = countWords + 1;
+                }
+            }
+
+            var reversed = "";
+            for (i = text.length - 1; i >= 0; i--) 
+            {
+                reversed = reversed + text[i];
+            }
+
+            document.getElementById("chars").innerHTML = c;
+            document.getElementById("words").innerHTML = countWords;
+            document.getElementById("rev").innerHTML = reversed;
+        }
+    </script>
+
+
+</body>
+
+</html>
